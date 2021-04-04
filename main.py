@@ -1,5 +1,9 @@
+from pororo import Pororo
+
+
 def get_text_summarization(input_text: str) -> str:
-    return ''
+    summarization = Pororo(task="text_summarization", lang="ko", model="abstractive")
+    return summarization(input_text)
 
 
 if __name__ == '__main__':
